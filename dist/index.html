@@ -13,7 +13,7 @@
 	</head>
 	<body class="overflow-x-hidden">
 		<!-- Navbar -->
-		<div class="container relative mx-auto p-6">
+		<nav class="container relative mx-auto p-6">
 			<!-- Flex Container For Nav Items-->
 			<div class="my-6 flex items-center justify-between space-x-20">
 				<!-- Logo -->
@@ -40,6 +40,61 @@
 					</li>
 				</ul>
 			</div>
-		</div>
+		</nav>
+		<!-- Hero Section -->
+		<header id="hero">
+			<!-- Container For Image & Content -->
+			<div class="container mx-auto flex flex-col-reverse p-6 lg:mb-0 lg:flex-row">
+				<!-- Content -->
+				<div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
+					<h1 class="mx-auto max-w-sm text-center text-3xl font-semibold text-veryDarkBlue md:max-w-lg lg:text-left lg:text-5xl">
+						A Simple Bookmark Manager
+					</h1>
+					<p class="mx-auto max-w-sm text-center text-lg text-gray-400 md:max-w-md lg:mx-0 lg:mt-0 lg:text-left lg:text-2xl">
+						A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try
+						it for free.
+					</p>
+					<!-- Buttons Container -->
+					<div class="flex w-full items-center justify-center space-x-4 lg:justify-start">
+						<a
+							href="#"
+							class="rounded-md border-2 border-softBlue bg-softBlue px-7 py-3 text-xs font-semibold text-white shadow-md duration-200 hover:bg-white hover:text-softBlue md:text-base"
+							>Get In On Chrome</a
+						>
+						<a
+							href="#"
+							class="rounded-md border-2 border-grayishBlue bg-grayishBlue px-7 py-3 text-xs font-semibold text-veryDarkBlue shadow-md duration-200 hover:bg-white hover:text-veryDarkBlue md:text-base"
+							>Get In On Firefox</a
+						>
+					</div>
+				</div>
+				<!-- Image -->
+				<div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+					<div class="bg-hero"></div>
+					<img src="./assets/illustration-hero.svg" class="relative z-10 overflow-x-visible lg:top-6 xl:top-0" alt="" />
+				</div>
+			</div>
+		</header>
+		<main>
+			<!-- Features Heading -->
+			<section id="features">
+				<div class="container mx-auto mt-16 px-6">
+					<h2 class="mb-6 text-center text-4xl font-semibold text-veryDarkBlue">Features</h2>
+					<p class="mx-auto max-w-md text-center text-grayishBlue">
+						Our aim is to make it quick and easy for you to access yourfavorite websites. Your bookmarks sync between your devices so you
+						can access them on the go.
+					</p>
+				</div>
+			</section>
+
+			<!-- Features Tabs -->
+			<section id="tabs">
+				<!-- Tabs Container -->
+				<div class="container relative mx-auto my-6 mb-32 mt-12 px-6">
+					<div class="bg-tabs"></div>
+					<!-- Tabs Flex Container -->
+				</div>
+			</section>
+		</main>
 	</body>
 </html>
