@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,7 +11,35 @@
 		<link rel="stylesheet" href="./css/style.css" />
 		<title>Bookmark</title>
 	</head>
-	<body>
-		<h1 class="text-4xl text-softRed">Bookmark</h1>
+	<body class="overflow-x-hidden">
+		<!-- Navbar -->
+		<div class="container relative mx-auto p-6">
+			<!-- Flex Container For Nav Items-->
+			<div class="my-6 flex items-center justify-between space-x-20">
+				<!-- Logo -->
+				<div class="z-30">
+					<img src="./assets/logo-bookmark.svg" id="logo" alt="Bookmark logo" />
+				</div>
+				<!-- Menu Items -->
+				<ul class="hidden items-center space-x-10 uppercase text-grayishBlue md:flex">
+					<li class="group">
+						<a href="#features" class="tracking-widest duration-200 group-hover:text-softRed">Features</a>
+					</li>
+					<li class="group">
+						<a href="#download" class="tracking-widest duration-200 group-hover:text-softRed">Download</a>
+					</li>
+					<li class="group">
+						<a href="#faq" class="tracking-widest duration-200 group-hover:text-softRed">FAQ</a>
+					</li>
+					<li class="group">
+						<a
+							href="#"
+							class="rounded-lg border-2 border-softRed bg-softRed px-8 py-2 text-white shadow-md duration-200 group-hover:bg-white group-hover:text-softRed"
+							>Login</a
+						>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</body>
 </html>
