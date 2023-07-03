@@ -29,3 +29,7 @@
 .btn-firefox {
 	@apply rounded-md border-2 border-grayishBlue bg-grayishBlue px-7 py-3 text-xs font-semibold text-veryDarkBlue shadow-md duration-200 hover:bg-white hover:text-veryDarkBlue md:text-base;
 }
+
+.tab-panel {
+	@apply flex cursor-pointer justify-center border-b text-center text-grayishBlue duration-200 hover:text-softRed md:w-1/3 md:border-b-0;
+}
