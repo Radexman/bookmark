@@ -41,3 +41,8 @@
 .btn-install {
 	@apply block w-full rounded-lg border-2 bg-softBlue py-3 text-white duration-200 hover:border-softBlue hover:bg-white hover:text-softBlue;
 }
+
+.ficon:hover {
+	filter: invert(53%) sepia(38%) saturate(303%) hue-rotate(326deg) brightness(101%) contrast(96%);
+	transition: .2s ease;
+}
