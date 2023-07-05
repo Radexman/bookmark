@@ -4,6 +4,9 @@ const newsletterForm = document.getElementById('newsletter-form');
 const errorMsg = document.getElementById('error-msg');
 const input = document.getElementById('input');
 const errorMark = document.getElementById('error-mark');
+const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+const logo = document.getElementById('logo');
 let regex = new RegExp('[a-z0-9]+@[a-z]+.[a-z]{2,3}');
 
 const onTabClick = (e) => {
@@ -40,6 +43,26 @@ const validateForm = (e) => {
 	}
 };
 
-// Tabs menu event listener
-tabs.forEach((tab) => tab.addEventListener('click', onTabClick));
-newsletterForm.addEventListener('submit', validateForm);
+// Hamburger Button Functionality
+
+const navToggle = () => {
+	btn.classList.toggle('open');
+	menu.classList.toggle('flex');
+	menu.classList.toggle('hidden');
+
+	if (menu.classList.contains('flex')) {
+		logo.setAttribute('src', './assets/logo-bookmark-footer.svg');
+	} else {
+		logo.setAttribute('src', './assets/logo-bookmark.svg');
+	}
+};
+
+const init = () => {
+	// Event Listeners
+	btn.addEventListener('click', navToggle);
+	menu.addEventListener('click', navToggle);
+	tabs.forEach((tab) => tab.addEventListener('click', onTabClick));
+	newsletterForm.addEventListener('submit', validateForm);
+};
+
+init();
