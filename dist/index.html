@@ -333,15 +333,23 @@
 
 					<!-- Form -->
 					<form
+						id="newsletter-form"
 						class="mx-auto flex max-w-2xl flex-col items-start justify-center space-y-6 px-6 text-base md:flex-row md:space-x-4 md:space-y-0 md:px-0"
 					>
 						<!-- Input & Button Container -->
-						<div class="mx-auto flex flex-col items-center justify-between md:mx-0 md:flex-row">
+						<div class="relative mx-auto flex flex-col items-center justify-between md:mx-0 md:flex-row">
 							<input
+								id="input"
 								type="text"
 								class="border-1 mb-4 flex-1 rounded-lg border-white px-6 pb-2 pt-3 focus:outline-none md:mb-0 md:mr-3"
 								placeholder="Enter your email address"
 							/>
+							<div id="error-msg" class="absolute top-10 hidden w-full rounded-b-lg bg-softRed px-3 text-xs italic text-white md:w-60">
+								Whoops, make sure it's an email
+							</div>
+							<div id="error-mark" class="absolute right-3 top-3 hidden h-6 w-6 rounded-full bg-softRed text-center text-xl text-white">
+								!
+							</div>
 							<button
 								type="submit"
 								class="w-full transform cursor-pointer rounded-lg bg-softRed px-6 py-3 text-center font-semibold text-white duration-200 hover:opacity-90 focus:outline-none"
